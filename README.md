@@ -1,4 +1,4 @@
-# Analysis Code for Reference Limits Using Transcranial Magnetic Stimulation in Healthy Adults
+# Reference Limits for Transcranial Magnetic Stimulation Measures in Healthy Adults
 
 ## Content
 
