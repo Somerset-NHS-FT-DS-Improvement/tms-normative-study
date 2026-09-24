@@ -23,8 +23,7 @@ def bootstrap_quantile_conf_int(data, q=0.975, n_boot=100, random_state=42):
 
 
 def fit_and_predict(data, formula, boot_number, prediction_grid, muscle_col):
-
-    # Fit OLS and fetch muscle-specific upper limits.
+    # Fit OLS and fetch muscle-specific estimates for upper limit.
 
     fitted_model = smf.ols(formula, data=data).fit()
 
@@ -72,7 +71,6 @@ def bootstrap_ols_predictions(
     n_boot=1000,
     random_state=42,
 ):
-
     # Estimate height-adjusted 97.5th percentile using OLS and fitted residuals.
 
     rng = np.random.default_rng(random_state)
@@ -143,7 +141,6 @@ def bootstrap_ols_predictions(
 
 
 def residual_plot(plot_df):
-
     # Plot spread of residuals from OLS regression over height.
 
     plt.rcParams.update(
